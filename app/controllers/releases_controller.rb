@@ -1,6 +1,6 @@
 class ReleasesController < ApplicationController
 
-  before_action :set_release, only: [:show, :edit, :update,]
+  before_action :set_release, only: [:show, :edit, :update]
   def index
     @releases = Release.all
   end
