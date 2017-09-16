@@ -1,2 +1,5 @@
-<h1>Artists#index</h1>
-<p>Find me in app/views/artists/index.html.erb</p>
+<h1>Index page</h1>
+<% @artists.each do |a|%>
+  <%= render "artist", artist: a %>
+<% end %>
+<%= link_to 'new', new_artist_path, {class: "btn btn-primary"}  %>

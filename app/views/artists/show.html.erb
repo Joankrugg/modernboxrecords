@@ -1,2 +1,12 @@
-<h1>Artists#show</h1>
-<p>Find me in app/views/artists/show.html.erb</p>
+<div class="card">
+  <div class="card-header">
+    <h2><%= @artist.name %></h2>
+  </div>
+  <div class="card-description">
+    <p><%= @artist.description %></p>
+  </div>
+</div>
+<%= link_to 'edit', edit_artist_path, {class: "btn btn-primary"}  %>
+<%= link_to "Delete", artist_path(@artist),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
