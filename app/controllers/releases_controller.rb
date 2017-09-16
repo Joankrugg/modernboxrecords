@@ -11,8 +11,11 @@ class ReleasesController < ApplicationController
 
   def create
     @release = Release.new(release_params)
-    @release.save
-    redirect_to release_path(@release)
+    if @release.save
+      redirect_to release_path(@release)
+    else
+      render :new
+    end
   end
 
   def show
@@ -24,8 +27,11 @@ class ReleasesController < ApplicationController
   end
 
   def update
-    @release.update(release_params)
-    redirect_to release_path(@release)
+    if @release.update(release_params)
+      redirect_to release_path(@release)
+    else
+      render :edit
+    end
   end
 
   private
