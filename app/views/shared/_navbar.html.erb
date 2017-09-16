@@ -5,17 +5,17 @@
   <% end %>
   <div class="content">
 <!-- Right Navigation -->
-    <div class="web-browsing hidden-xs hidden-sm">
+    <div class="web-browsing hidden-xs hidden-sm hidden-md">
       <%= link_to "Label", pages_label_path, {class: "navbar-item navbar-wagon-link"}%>
       <%= link_to "Artists", artists_path, {class: "navbar-item navbar-wagon-link"} %>
       <%= link_to "Releases", releases_path, class: "navbar-item navbar-wagon-link" %>
       <%= link_to "Shop", shops_path, class: "navbar-item navbar-wagon-link" %>
-      <%= link_to "News", "#", class: "navbar-item navbar-wagon-link" %>
+      <%= link_to "News", actus_path, class: "navbar-item navbar-wagon-link" %>
 
     </div>
   </div>
   <div class="networks">
-    <div class="links hidden-xs hidden-sm">
+    <div class="links hidden-xs hidden-sm hidden-md">
       <a href="https://www.facebook.com/modernboxrecords/?ref=br_rs"><i class="fa fa-facebook networks-item navbar-wagon-link" aria-hidden="true"></i>
       <a href="https://www.instagram.com/modernboxrecords/"><i class="fa fa-instagram networks-item navbar-wagon-link" aria-hidden="true"></i>
       <a href="https://www.youtube.com/channel/UCD-V4n6eugETPlfr16DqM_Q?view_as=subscriber"><i class="fa fa-youtube networks-item navbar-wagon-link" aria-hidden="true"></i>
@@ -38,7 +38,7 @@
     </div>
   </div>
     <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-item hidden-md hidden-lg">
+  <div class="navbar-item hidden-lg">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">

@@ -1,0 +1,5 @@
+<h1>Index page</h1>
+<% @actus.each do |a|%>
+  <%= render "actu", actu: a %>
+<% end %>
+<%= link_to 'new', new_actu_path, {class: "btn btn-primary"}  %>
