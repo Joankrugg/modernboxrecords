@@ -3,6 +3,10 @@
     <h2><%= release.title %></h2>
   </div>
   <div class="card-description">
-    <p><%= release.record %></p>
+    <% @releases.each do |release| %>
+      <% if release.record %>
+        <p><%= release.record.name %></p>
+      <% end %>
+    <% end %>
   </div>
 </div>
