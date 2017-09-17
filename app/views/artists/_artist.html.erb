@@ -5,4 +5,7 @@
   <div class="card-description">
     <p><%= artist.description %></p>
   </div>
+  <div class="card-photo">
+    <%= cl_image_tag artist.photo, height: 300, width: 400, crop: :fill %>
+  </div>
 </div>

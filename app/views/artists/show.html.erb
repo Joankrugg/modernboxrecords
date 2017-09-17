@@ -5,6 +5,7 @@
   <div class="card-description">
     <p><%= @artist.description %></p>
   </div>
+    <%= cl_image_tag @artist.photo, height: 300, width: 400, crop: :fill %>
 </div>
 <%= link_to 'edit', edit_artist_path, {class: "btn btn-primary"}  %>
 <%= link_to "Delete", artist_path(@artist),

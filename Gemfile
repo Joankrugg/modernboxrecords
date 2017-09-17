@@ -15,6 +15,10 @@ gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.0'
+
+
 
 group :development, :test do
   gem 'pry-byebug'
