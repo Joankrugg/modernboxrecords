@@ -1,11 +1,5 @@
 <div class="card">
-  <div class="card-header">
-    <h2><%= artist.name %></h2>
-  </div>
-  <div class="card-description">
-    <p><%= artist.description %></p>
-  </div>
   <div class="card-photo">
-    <%= cl_image_tag artist.photo, height: 300, width: 400, crop: :fill %>
+    <%= cl_image_tag artist.photo, height: 600, width: 900, crop: :fill, class: "img-responsive" %>
   </div>
 </div>
